@@ -11,6 +11,18 @@ Summary: Structured Configuration Library
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/zconfig-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/zconfig-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/zconfig-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/zconfig-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/zconfig-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/zconfig-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zconfig/badges/version.svg)](https://anaconda.org/conda-forge/zconfig)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zconfig/badges/downloads.svg)](https://anaconda.org/conda-forge/zconfig)
+
 Installing zconfig
 ==================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `zconfig` available on your platfo
 ```
 conda search zconfig --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/zconfig-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/zconfig-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/zconfig-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/zconfig-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/zconfig-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/zconfig-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zconfig/badges/version.svg)](https://anaconda.org/conda-forge/zconfig)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zconfig/badges/downloads.svg)](https://anaconda.org/conda-forge/zconfig)
 
 
 Updating zconfig-feedstock
