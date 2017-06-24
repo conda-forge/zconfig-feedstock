@@ -1,23 +1,26 @@
-{%set name = "ZConfig" %}
-{%set version = "3.2.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "de0a802e5dfea3c0b3497ccdbe33a5023c4265f950f33e35dd4cf078d2a81b19" %}
-{%set build_num = "0" %}
+{% set name = "ZConfig" %}
+{% set version = "3.2.0" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "de0a802e5dfea3c0b3497ccdbe33a5023c4265f950f33e35dd4cf078d2a81b19" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
+  entry_points:
+    - zconfig = ZConfig.validator:main
+    - zconfig_schema2html = ZConfig.schema2html:main
+  
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
-
 
 requirements:
   build:
@@ -39,6 +42,9 @@ test:
     - ZConfig.tests.library
     - ZConfig.tests.library.thing
     - ZConfig.tests.library.widget
+  
+  commands:
+    - zconfig_schema2html
 
 about:
   home: http://www.zope.org/Members/fdrake/zconfig/
