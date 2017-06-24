@@ -44,7 +44,7 @@ test:
     - ZConfig.tests.library.widget
   
   commands:
-    - zconfig_schema2html
+    - zconfig_schema2html -h
 
 about:
   home: http://www.zope.org/Members/fdrake/zconfig/
