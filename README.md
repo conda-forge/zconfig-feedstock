@@ -14,14 +14,15 @@ Summary: Structured Configuration Library
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/zconfig-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/zconfig-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/zconfig-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/zconfig-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/zconfig-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/zconfig-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/zconfig-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/zconfig-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zconfig/badges/version.svg)](https://anaconda.org/conda-forge/zconfig)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zconfig/badges/downloads.svg)](https://anaconda.org/conda-forge/zconfig)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-zconfig-green.svg)](https://anaconda.org/conda-forge/zconfig) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/zconfig.svg)](https://anaconda.org/conda-forge/zconfig) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/zconfig.svg)](https://anaconda.org/conda-forge/zconfig) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/zconfig.svg)](https://anaconda.org/conda-forge/zconfig) |
 
 Installing zconfig
 ==================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
