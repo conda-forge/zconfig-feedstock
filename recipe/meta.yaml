@@ -1,8 +1,8 @@
 {% set name = "ZConfig" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "560f779c7dcca0593083cbdb3fac9bfc7974cd5061363e2254844192e5644998" %}
+{% set hash_val = "a094e492ac31025f5b5a58b32a7c7f03e2e2899c8beb4c1601ea00653bf3ea68" %}
 {% set build = 0 %}
 
 package:
