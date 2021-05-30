@@ -1,18 +1,13 @@
 {% set name = "ZConfig" %}
-{% set version = "3.5.0" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "a094e492ac31025f5b5a58b32a7c7f03e2e2899c8beb4c1601ea00653bf3ea68" %}
-{% set build = 1 %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a28e95a0ae335795747eccad35b2cb708f37d44c7f325e2acb201e98330b16e5
 
 build:
   noarch: python
@@ -20,8 +15,8 @@ build:
     - zconfig = ZConfig.validator:main
     - zconfig_schema2html = ZConfig.schema2html:main
   
-  number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -47,6 +42,10 @@ test:
   
   commands:
     - zconfig_schema2html -h
+    - pip check 
+    
+  requires: 
+    - pip
 
 about:
   home: http://www.zope.org/Members/fdrake/zconfig/
