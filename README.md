@@ -3,7 +3,7 @@ About zconfig
 
 Home: http://www.zope.org/Members/fdrake/zconfig/
 
-Package license: ZPL 2.1
+Package license: ZPL-2.1
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zconfig-feedstock/blob/master/LICENSE.txt)
 
