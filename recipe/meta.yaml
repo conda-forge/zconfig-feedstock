@@ -1,5 +1,5 @@
 {% set name = "ZConfig" %}
-{% set version = "3.6.0" %}
+{% set version = "3.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a28e95a0ae335795747eccad35b2cb708f37d44c7f325e2acb201e98330b16e5
+  sha256: 4422c7d663af762cd7795775366bc6a67ab440a1ab796eb0f7425b0e9034f076
 
 build:
   noarch: python
   entry_points:
     - zconfig = ZConfig.validator:main
     - zconfig_schema2html = ZConfig.schema2html:main
-  
+
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -39,12 +39,12 @@ test:
     - ZConfig.tests.library
     - ZConfig.tests.library.thing
     - ZConfig.tests.library.widget
-  
+
   commands:
     - zconfig_schema2html -h
-    - pip check 
-    
-  requires: 
+    - pip check
+
+  requires:
     - pip
 
 about:
@@ -52,7 +52,7 @@ about:
   license: ZPL-2.1
   license_file: LICENSE.txt
   license_family: Other
-  summary: 'Structured Configuration Library'
+  summary: Structured Configuration Library
   dev_url: https://github.com/zopefoundation/ZConfig
 
 extra:
