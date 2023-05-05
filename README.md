@@ -1,11 +1,11 @@
-About zconfig
-=============
+About zconfig-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zconfig-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.zope.org/Members/fdrake/zconfig/
 
 Package license: ZPL-2.1
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zconfig-feedstock/blob/main/LICENSE.txt)
 
 Summary: Structured Configuration Library
 
