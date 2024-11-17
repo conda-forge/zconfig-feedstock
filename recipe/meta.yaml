@@ -1,13 +1,13 @@
 {% set name = "ZConfig" %}
-{% set version = "4.0" %}
+{% set version = "4.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f8d642fba6ba98d08631be2c1f71ad1957c051fef4aa3d3fb9f1e08dc61d0156
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: b6a79dda157f3698c8768d2cedc263216e8af240d3cf9d09a02a64291114eb20
 
 build:
   noarch: python
