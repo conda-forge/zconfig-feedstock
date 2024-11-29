@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: b6a79dda157f3698c8768d2cedc263216e8af240d3cf9d09a02a64291114eb20
 
 build:
@@ -15,17 +15,17 @@ build:
     - zconfig = ZConfig.validator:main
     - zconfig_schema2html = ZConfig.schema2html:main
 
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -46,6 +46,7 @@ test:
 
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://www.zope.org/Members/fdrake/zconfig/
