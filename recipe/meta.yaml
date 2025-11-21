@@ -1,5 +1,5 @@
 {% set name = "ZConfig" %}
-{% set version = "4.2" %}
+{% set version = "4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: a0e4b5277c4cee8060ce335a578ac458f82c240ae96b16659200dbc4d98bfcce
+  sha256: 472233e515fa29be6c873e78b8a2b450c2cd25d0133cb45960837f33f1ab4fe3
 
 build:
   noarch: python
